@@ -16,7 +16,7 @@ pipeline {
             }
         stage('Checkout SCM') {
             steps{
-                git branch: 'feature/Jenkkins-pipeline', url: 'https://github.com/Ohiani/ansible-config.git'
+                git branch: 'main', url: 'https://github.com/Ohiani/ansible-config.git'
                    }
             }
         stage('Prepare Ansible For Execution') {
